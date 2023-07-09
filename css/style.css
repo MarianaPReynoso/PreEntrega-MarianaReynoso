@@ -168,76 +168,76 @@ section{
 }
 
 /*DESTINOS*/
-/* .main-titulo{
-    background-color: fuchsia;
-    grid-area: main-titulo;
-    justify-content: center;
-}
-
-.section-uno{
-    background-color: blue;
-    grid-area: section-uno
-}
-
-.section-dos{
-    background-color: red;
-    grid-area: section-dos;
-}
-
-footer{
-    background-color: green;
-    grid-area: footer;
-}
-
 .container2{
-    height: 100vh;
-    width: 100vh;
     display: grid;
-    grid-template-columns: 20fr 10fr;
-    grid-template-rows: 400px 400px 300px 100px;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto auto;
     justify-content: center;
-    align-items: center;
 
     grid-template-areas: 
     "main-titulo main-titulo"
     "section-uno section-dos"
-    "section-uno section-dos"
+    "section-tres section-cuatro"
     "footer footer";
 
     gap: 10px;
-} */
+}
 
-.destino img{
-    width: 400px;
-    height: 300px;
+.main-titulo{
+    grid-area: main-titulo;
+}
+
+.main-titulo h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.destino{
+    width: 330px;
+    height: 270px;
+    margin: 15px;
+}
+
+.section-uno{
+    grid-area: section-uno;
+}
+
+.section-dos{
+    grid-area: section-dos;
+}
+
+.section-tres{
+    grid-area: section-tres;
+}
+
+.section-cuatro{
+    grid-area: section-cuatro;
+}
+
+.destino-img{
+    width: 330px;
+    height: 270px;
     object-fit: cover;
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .subtitulo{
     margin-top: 1%;
-    margin-left: 32%; 
-    text-align: left;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.subtitulo2{ 
+.subtitulo2 {
     margin-top: -2%;
-    margin-right: 20%;
-    margin-left: 63%;
+    margin-left: auto;
     text-align: right;
-    position: absolute;
 }
 
-.casa3{
-    margin-top: 4%;
-    margin-left: 20%;
-    margin-right: 1%;
-    cursor: pointer;    
-}
-
-.casa4{
-    margin-right: 5%;
-    cursor: pointer;
+footer{
+    margin-top: 40px;
+    grid-area: footer;
 }
 
 /*PROMOCIONES*/
