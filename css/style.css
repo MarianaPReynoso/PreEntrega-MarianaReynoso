@@ -64,7 +64,6 @@ footer{
     margin-bottom: 15px;
     margin-left: 80px;
     justify-content: center;
-    position: relative;
     object-fit: cover;
 }
 
@@ -98,6 +97,7 @@ main p{
     margin-left: 3%;
     margin-right: 3%;
     cursor: pointer;  
+    display: flex;
 }
 
 .box-texto{
@@ -226,8 +226,7 @@ section{
 .subtitulo{
     margin-top: 1%;
     text-align: center;
-    font-size: 1.5rem;
-    /* font-size: 24px; */
+    font-size: 24px;
 }
 
 .subtitulo2 {
@@ -278,7 +277,72 @@ input, textarea{
 }
 
 .contacto {
-    margin: 10px;
-    text-align: center;
+    margin-left: -5px;
+    text-align: center; 
 }
 
+.iconos{
+    width: 2%;
+    margin: 0;
+    padding: 0;
+}
+
+/*MEDIA QUERIES CELULAR*/
+@media screen and (max-width: 767px) {
+    /* GENERAL */
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu ul li {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    /* INDEX */
+    main .carousel{
+        display: none;
+    }
+
+    main .box-imagen{
+        display: block;
+    }
+
+    main .box-texto{
+        display: none;
+    }
+
+    /* SOBRE NOSOTROS */
+    .container{
+        width: 400px;
+        margin-left: 2px;
+        display: block;
+        text-align: justify;
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    main p{
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    #parrafo1{
+        margin-top: 30px;
+    }
+
+    .casa2{
+        display: none;
+    }
+    
+}
