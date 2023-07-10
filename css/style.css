@@ -57,6 +57,9 @@ footer{
 }
 
 /*INDEX*/
+.slide{
+    transition: 2s;
+}
 .carousel-item{
     width: 1200px;
     height: 300px;
@@ -98,6 +101,12 @@ main p{
     margin-right: 3%;
     cursor: pointer;  
     display: flex;
+}
+
+.casa:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0px 13px 30px -3px rgb(61, 60, 60);
 }
 
 .box-texto{
@@ -223,6 +232,12 @@ section{
     cursor: pointer;
 }
 
+.destino-img:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+    box-shadow: 0px 10px 30px -1px rgb(61, 60, 60);
+}
+
 .subtitulo{
     margin-top: 1%;
     text-align: center;
@@ -256,7 +271,8 @@ footer{
 }
 
 .casa5:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 0px 15px 30px -3px rgb(61, 60, 60);
 }
 
 /*CONTACTO*/
