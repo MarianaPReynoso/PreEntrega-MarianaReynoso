@@ -336,6 +336,11 @@ input, textarea{
         display: none;
     }
 
+    .casa:hover{
+        box-shadow: none;
+        transform: none;
+    }
+
     /* SOBRE NOSOTROS */
     .container{
         width: 400px;
