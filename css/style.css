@@ -314,7 +314,7 @@ input, textarea{
 
     .menu ul li {
         font-size: 10px;
-        text-align: center;
+        text-align: left;
     }
 
     footer{
@@ -343,19 +343,24 @@ input, textarea{
 
     /* SOBRE NOSOTROS */
     .container{
-        width: 400px;
-        margin-left: 2px;
-        display: block;
+        margin-left: 15px;
         text-align: justify;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
     }
 
     main h1{
         text-align: center;
+        margin-right: 0;
     }
 
     main p{
         text-align: justify;
         font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow:visible;
     }
 
     #parrafo1{
